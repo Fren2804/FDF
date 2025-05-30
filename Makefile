@@ -12,7 +12,7 @@ FILES = \
 OBJS = $(FILES:.c=.o)
 
 INC = -Iinc -I../minilibx-linux -I.
-MLX = -L../minilibx-linux -lmlx -lXext -lX11 -lm
+MLX = -Lminilibx-linux -lmlx -lXext -lX11 -lm
 
 %.o: %.c
 	@echo "🔧Compiling $< 🔨"
